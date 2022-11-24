@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "pigs_have_litters",
+  "version": "${version}",
+
+  "name": "Pigs Have Litters",
+  "description": "Buff Pigs by making them have litters on breed!",
+  "icon": "assets/pigs_have_litters/icon.png",
+  "authors": [
+    "Pepperoni__Jabroni__"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/arrow-entity-loot-drop",
+    "sources": "https://github.com/Pepperoni-Jabroni/ArrowEntityLootDrop",
+    "issues": "https://github.com/Pepperoni-Jabroni/ArrowEntityLootDrop/issues"
+  },
+
+  "license": "MIT",
+
+  "environment": "*",
+  "mixins": [
+    "pigs_have_litters.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  }
+}

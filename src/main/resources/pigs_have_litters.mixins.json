@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "pepjebs.pigs_have_litters.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "PigsHaveLittersMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
