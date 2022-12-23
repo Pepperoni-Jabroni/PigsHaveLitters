@@ -5,7 +5,7 @@
   </br></br>
   <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api"><img src="https://i.imgur.com/Ol1Tcf8.png" width="149" height="50" title="Fabric API" alt="Fabric API"></a>
   </br></br>
-  <a href="https://www.curseforge.com/minecraft/mc-mods/map-atlases"><img alt="Curseforge" src="https://cf.way2muchnoise.eu/full_436298_downloads.svg"></a> <a href="https://modrinth.com/mod/pigs-have-litters"><img alt="Modrinth" src="https://img.shields.io/modrinth/dt/pigs-have-litters?label=Modrinth%20Downloads"></a> <a href="https://github.com/Pepperoni-Jabroni/PigsHaveLitters"><img alt="GitHub" src="https://img.shields.io/github/downloads/Pepperoni-Jabroni/PigsHaveLitters/total?label=Downloads&logo=github"></a>
+  <a href="https://modrinth.com/mod/pigs-have-litters"><img alt="Modrinth" src="https://img.shields.io/modrinth/dt/pigs-have-litters?label=Modrinth%20Downloads"></a> <a href="https://github.com/Pepperoni-Jabroni/PigsHaveLitters"><img alt="GitHub" src="https://img.shields.io/github/downloads/Pepperoni-Jabroni/PigsHaveLitters/total?label=Downloads&logo=github"></a>
 </p>
 
 ## 📖 About
