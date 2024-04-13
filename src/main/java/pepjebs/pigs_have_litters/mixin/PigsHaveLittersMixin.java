@@ -9,6 +9,7 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
+import pepjebs.pigs_have_litters.PigsHaveLittersMod;
 
 import java.util.Random;
 
@@ -32,7 +33,10 @@ public class PigsHaveLittersMixin extends AnimalEntity {
 
     private int getPigletSpawnCount() {
         // Formatted "Probability:Count,..."
-        String litterSizing = "30:1,50:2,15:3,4:4,1:5";
+        String litterSizing = PigsHaveLittersMod.DEFAULT_LITTER_CHANCES;
+        if (PigsHaveLittersMod.CONFIG != null) {
+            litterSizing = PigsHaveLittersMod.CONFIG.litterSizingChances;
+        }
         var confs = litterSizing.split(",");
         int currentSum = 0;
         Random random = new Random();
@@ -41,7 +45,7 @@ public class PigsHaveLittersMixin extends AnimalEntity {
             var entry = c.split(":");
             if (entry.length != 2) continue;
             int chances = Integer.parseInt(entry[0]);
-            int pigletCount = Integer.parseInt(entry[1]);
+            int pigletCount = Integer.parseInt(entry[1]) - 1;
             if (selection <= (chances / 100.0f) + (currentSum / 100.0f)) {
                 return pigletCount;
             }

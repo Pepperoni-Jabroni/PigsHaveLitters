@@ -18,14 +18,18 @@
   "license": "MIT",
 
   "environment": "*",
+  "entrypoints": {
+    "main": ["pepjebs.pigs_have_litters.PigsHaveLittersMod"],
+    "modmenu": ["pepjebs.pigs_have_litters.config.PigsHaveLittersModMenuApiImpl"]
+  },
   "mixins": [
     "pigs_have_litters.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.14.6",
+    "fabricloader": ">=0.15.9",
     "fabric": "*",
-    "minecraft": "~1.19",
+    "minecraft": ["1.20.4", "1.20.5"],
     "java": ">=17"
   }
 }

@@ -1,0 +1,5 @@
+{
+  "text.autoconfig.pigs_have_litters.title": "Pigs Have Litters Settings",
+  "text.autoconfig.pigs_have_litters.option.litterSizingChances": "Litter Sizing Chances",
+  "text.autoconfig.pigs_have_litters.option.litterSizingChances.@Tooltip": "Comma-separated list of Probability:Count - probabilities should sum to 100."
+}
