@@ -4,6 +4,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.passive.PigEntity;
+import net.minecraft.item.ItemStack;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
@@ -54,11 +55,14 @@ public class PigsHaveLittersMixin extends AnimalEntity {
         return 0;
     }
 
-    // 2 Dummy methods below
+    // 3 Dummy methods below
     protected PigsHaveLittersMixin(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
     }
 
     @Override
     public boolean cannotBeSilenced() { return super.cannotBeSilenced(); }
+
+    @Override
+    public boolean isBreedingItem(ItemStack stack) { return true; }
 }
