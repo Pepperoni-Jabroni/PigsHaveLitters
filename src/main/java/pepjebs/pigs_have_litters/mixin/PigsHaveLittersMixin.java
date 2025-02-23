@@ -62,7 +62,4 @@ public class PigsHaveLittersMixin extends AnimalEntity {
 
     @Override
     public boolean cannotBeSilenced() { return super.cannotBeSilenced(); }
-
-    @Override
-    public boolean isBreedingItem(ItemStack stack) { return true; }
 }
