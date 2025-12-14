@@ -4,18 +4,18 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.passive.PigEntity;
-import net.minecraft.item.ItemStack;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.Unique;
 import pepjebs.pigs_have_litters.PigsHaveLittersMod;
 
 import java.util.Random;
 
 @Mixin(PigEntity.class)
-public class PigsHaveLittersMixin extends AnimalEntity {
+public abstract class PigsHaveLittersMixin extends AnimalEntity {
 
     @Override
     public void breed(ServerWorld world, AnimalEntity other) {
@@ -32,6 +32,7 @@ public class PigsHaveLittersMixin extends AnimalEntity {
     @Shadow @Nullable @Override
     public PigEntity createChild(ServerWorld world, PassiveEntity entity) { return null; }
 
+    @Unique
     private int getPigletSpawnCount() {
         // Formatted "Probability:Count,..."
         String litterSizing = PigsHaveLittersMod.DEFAULT_LITTER_CHANCES;
@@ -62,7 +63,4 @@ public class PigsHaveLittersMixin extends AnimalEntity {
 
     @Override
     public boolean cannotBeSilenced() { return super.cannotBeSilenced(); }
-
-    @Override
-    public boolean isBreedingItem(ItemStack stack) { return true; }
 }
