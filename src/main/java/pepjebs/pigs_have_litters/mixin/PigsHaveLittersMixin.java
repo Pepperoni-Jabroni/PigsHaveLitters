@@ -56,11 +56,9 @@ public abstract class PigsHaveLittersMixin extends AnimalEntity {
         return 0;
     }
 
-    // 3 Dummy methods below
+    // Dummy methods below
     protected PigsHaveLittersMixin(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
     }
 
-    @Override
-    public boolean cannotBeSilenced() { return super.cannotBeSilenced(); }
 }
